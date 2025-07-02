@@ -1,6 +1,9 @@
 #include "gmock/gmock.h"
 #include "prime-factors.cpp"
 
-TEST(TS, TC1) {
-	EXPECT_EQ(1, 1);
+
+TEST(PrimeFactors, Of1) {
+	PrimeFactors prime_factor;
+	vector<int> expected = {};
+	EXPECT_EQ(expected, prime_factor.of(1));
 }

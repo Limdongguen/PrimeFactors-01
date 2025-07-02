@@ -128,8 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="prime-factors_test.cpp" />
-    <ClCompile Include="prime-fectors.cpp" />
+    <ClCompile Include="prime-factors_test.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="prime-factors.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
